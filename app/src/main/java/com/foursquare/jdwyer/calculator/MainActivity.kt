@@ -2,6 +2,7 @@ package com.foursquare.jdwyer.calculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
@@ -25,5 +26,26 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        result = findViewById(R.id.result)
+        newNumber = findViewById(R.id.newNumber)
+
+        var button0: Button = findViewById(R.id.button0)
+        var button1: Button = findViewById(R.id.button1)
+        var button2: Button = findViewById(R.id.button2)
+        var button3: Button = findViewById(R.id.button3)
+        var button4: Button = findViewById(R.id.button4)
+        var button5: Button = findViewById(R.id.button5)
+        var button6: Button = findViewById(R.id.button6)
+        var button7: Button = findViewById(R.id.button7)
+        var button8: Button = findViewById(R.id.button8)
+        var button9: Button = findViewById(R.id.button9)
+        var buttonDot: Button = findViewById(R.id.buttonDot)
+        var buttonAdd: Button = findViewById(R.id.buttonAdd)
+        var buttonDiv: Button = findViewById(R.id.buttonDiv)
+        var buttonMult: Button = findViewById(R.id.buttonMult)
+        var buttonSub: Button = findViewById(R.id.buttonSub)
+        var buttonEqu: Button = findViewById(R.id.buttonEqu)
+
     }
 }
