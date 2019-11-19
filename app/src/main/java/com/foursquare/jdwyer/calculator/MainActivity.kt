@@ -14,13 +14,12 @@ class MainActivity : AppCompatActivity() {
     // by lazy, defines a func that is called the first time the var is accessed. From there,
     // the val is cached so it's only called once
     private val displayOperation by lazy(LazyThreadSafetyMode.NONE) { findViewById<TextView>(R.id.operation) }
-//    benefit of using by lazy is over lateinit is that we can declare values as val instead of var
+    // benefit of using by lazy is over lateinit is that we can declare values as val instead of var
 
-//    variables to hold operands
+    //    variables to hold operands
     private var operand1: Double? = null
     private var operand2: Double = 0.0
     private var pendingOperation = ""
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +40,8 @@ class MainActivity : AppCompatActivity() {
         var button8: Button = findViewById(R.id.button8)
         var button9: Button = findViewById(R.id.button9)
         var buttonDot: Button = findViewById(R.id.buttonDot)
+
+//        Operand Buttons
         var buttonAdd: Button = findViewById(R.id.buttonAdd)
         var buttonDiv: Button = findViewById(R.id.buttonDiv)
         var buttonMult: Button = findViewById(R.id.buttonMult)
